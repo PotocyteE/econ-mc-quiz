@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Rise of the Modern Global Economy – MC Practice</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--text:#1f2328;--muted:#6b7280;--line:#e2e0d8;--accent:#2f5d8a;--accent-d:#244a6f;--ok:#1e7a46;--ok-bg:#e4f4ea;--bad:#b3261e;--bad-bg:#fbe9e7}
+@media (prefers-color-scheme:dark){:root{--bg:#16181c;--card:#20232a;--text:#e8e8e6;--muted:#9aa0a8;--line:#333842;--accent:#6aa3d8;--accent-d:#8bb8e4;--ok:#5fcf8f;--ok-bg:#16301f;--bad:#ff8a80;--bad-bg:#3a1c1a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:680px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.4rem;margin:8px 0 4px}
+.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px}
+button{font:inherit;cursor:pointer}
+.menu-btn{display:block;width:100%;text-align:left;background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px}
+.menu-btn:hover{border-color:var(--accent)}
+.menu-btn b{display:block;font-size:1.05rem}
+.menu-btn span{color:var(--muted);font-size:.9rem}
+.top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;margin-bottom:8px}
+.link{background:none;border:0;color:var(--accent);padding:0}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.q{font-size:1.1rem;font-weight:600;margin:0 0 14px}
+.opt{display:flex;gap:10px;width:100%;text-align:left;background:var(--card);color:var(--text);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .k{font-weight:700;color:var(--accent);min-width:1.2em}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.opt:disabled{cursor:default}
+.exp{border-left:4px solid var(--accent);padding:8px 12px;margin:14px 0;color:var(--text);background:var(--card);border-radius:0 8px 8px 0}
+.exp.ok{border-color:var(--ok)}.exp.bad{border-color:var(--bad)}
+.primary{background:var(--accent);color:#fff;border:0;border-radius:12px;padding:12px 22px;font-weight:600}
+.primary:hover{background:var(--accent-d)}
+.secondary{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:12px 22px;font-weight:600}
+.score{font-size:2.6rem;font-weight:800;margin:4px 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.miss{padding:12px 0;border-top:1px solid var(--line)}
+.miss:first-child{border-top:0}
+.miss .a{color:var(--ok);font-weight:600}
+.miss .y{color:var(--bad)}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script>
+var L=[
+{id:1,name:"Lecture 1 – Geographic Discovery and Global Exchange",q:[
+["America was discovered by",["the European at the end of the 15th century.","the Chinese Admiral Zheng He in 1405.","Vasco da Gama in 1497.","Ferdinand Magellan in 1519."],0,"Europeans reached the 'new world' after Columbus in 1492, which started the connection of the world into a single global economy."],
+["In the second stage of the industrial revolution",["Britain was the leader.","Steam engine was the most important invention.","the US excelled and became the leading industrial country in the world.","Information and communication technology such as Internet was widely used in the world."],2,"Britain led stage one (coal, steam). In stage two (oil, electricity, chemicals, Bessemer steel, cars) the US and Germany took over. Internet/ICT belongs to stage three."],
+["Europeans were eager to discover a new sea route to East Asia in the 15th century because: I. the direct trade route with Asia was blocked by the Muslim Ottoman Empire; II. they wanted spices from East Asia; III. they wanted an alliance with the Ming emperor against the Mongols in central Europe; IV. it was part of a crusade urged by the Pope.",["I and II","I and III","II and III","I, II, III and IV"],0,"The motives were the blocked overland route (Ottoman Empire) and the spice trade. The Ming alliance and crusade reasons are not the standard explanation."],
+["Who found the sea route from Europe to India?",["Zheng He","Christopher Columbus","Vasco da Gama","Ferdinand Magellan"],2,"Vasco da Gama reached India by sea in 1497–98. Columbus reached America in 1492."],
+["The sequence of industrialization was",["Britain, the US, Japan, China","the US, Britain, Germany, Japan","France, Britain, Germany, the US","Portugal, Spain, the Netherlands, Britain"],0,"Britain started first (about 1760), then the spread to the US, Japan and Germany. China caught up only after Deng Xiaoping's 1978 reform."],
+["At the end of the 15th century, the world population was around",["50 million","half a billion","2 billion","7.7 billion"],1,"World population was about 0.5 billion, mostly at subsistence level. Today it is about 7.7 billion."],
+["The major breakthrough of the first stage of industrialization in Britain (c. 1760–1840) was",["electricity and oil","mechanization, steam power and the weaving machine","computers and the internet","assembly-line car production"],1,"Stage one = mechanization, steam power, weaving machines, coal, railways and cotton textiles."],
+["The colonial system ended",["after World War I","during the Great Depression","after World War II","after the collapse of the USSR"],2,"After WWII (1939–45) many colonies in Africa and Asia (India, Pakistan, Indonesia, Singapore, Malaysia, Vietnam, the Philippines…) became independent."],
+["Which best describes a communist economy as described in the lecture?",["Private ownership with free markets","Public ownership of resources under strict government control","Production guided by consumer preferences","Resources allocated by profit and loss"],1,"Under communism, public ownership replaced private ownership; markets, meaningful prices, profit and loss disappeared, and economic planning directed resources."],
+["The USSR collapsed and the Eastern Bloc disintegrated in",["1945–47","1969–72","1978–80","1989–91"],3,"The collapse in 1989–91 allowed former communist economies to rejoin the global economy."],
+["According to the lecture, the pre-conditions of growth in per-capita income are",["public ownership, central planning and production quotas","private property rights, rule of law and the use of markets to allocate resources","colonies, high tariffs and a strong military","a large population, abundant land and low taxes"],1,"The world learned from the communist experience that growth needs private property rights, rule of law and markets."],
+["Before the first stage of industrialization (1760–1840), the largest economy in the world was",["Britain","the Ottoman Empire","China under the Qing dynasty","Japan"],2,"China fell behind because it failed to join industrialization and modernization."],
+["Deng Xiaoping launched China's economic reform in",["1978","1949","1966","1989"],0,"The 1978 reform gradually changed the planned command economy into a market-oriented economy."],
+["Under the Bretton Woods system (and even after its demise)",["the British pound was the main global currency","the US dollar was the global vehicle currency for major international transactions","gold alone was used for all trade","the euro replaced national currencies"],1,"After WWII the US became the most powerful nation, and the US dollar became the global vehicle currency."],
+["Major global wars like WWI and WWII no longer occurred after 1945 mainly because",["of the creation of the European Union","superpowers learned the destructive power of nuclear weapons (mutual assured destruction, MAD)","of tariff cuts under GATT","communism collapsed in 1945"],1,"The US and USSR understood that nuclear weapons could cause mutual assured destruction (MAD)."],
+["The GATT",["created a common currency in Europe","organized rounds of tariff cuts across countries to encourage international trade","controlled oil prices","set production quotas for communist countries"],1,"GATT tariff-cut rounds encouraged international trade in goods and services."],
+["The European Union",["allows free internal movement of goods, capital and people and uses common customs rules against non-members","only reduces tariffs among the US, Canada and Mexico","requires every member to use the euro","is a trade group of Southeast Asian countries"],0,"The EU has common customs rules and free internal movement. Only the 19 Euro Zone members use the euro, under the European Central Bank."],
+["NAFTA reduced tariffs among",["the US, China and Japan","Britain, France and Germany","the US, Canada and Mexico","India, Pakistan and Indonesia"],2,"NAFTA = North American Free Trade Agreement (US, Canada, Mexico). ASEAN is the Southeast Asian bloc."],
+["The energy crisis of the 1970s caused supply shocks, resulting in",["deflation and a boom","recession and inflation at the same time in oil-importing countries","falling oil prices and rapid growth","hyperinflation in Germany"],1,"Recession and inflation occurred together in oil-importing countries."],
+["To achieve sustained growth in per-capita output, what became crucial (beyond more land, labour and capital)?",["only more land","only more labour","new inventions and technological advance","protecting colonies"],2,"More inputs raise output, but sustained per-capita growth requires new inventions and technology; countries spend part of GDP on R&amp;D and companies compete for patents."]
+]},
+{id:2,name:"Lecture 2 – The Industrial Revolution",q:[
+["Industrialization first began in",["Britain","the USA","Germany","Spain"],0,"The Industrial Revolution began in Britain in the mid-18th century and then spread to other parts of the world."],
+["Industrial capitalism is distinguished by: I. using slaves in production; II. plowing back earned profit to expand production; III. using factories and machinery for production; IV. searching for new markets to sell more products.",["I and II","II and III","III and IV","II, III and IV"],3,"Reinvesting profit, factory/machine production and finding new (overseas) markets define industrial capitalism. Slavery is not a defining feature."],
+["Large-scale colonization of Africa during the 20th century was the consequence of",["Imperialism","Industrialization","Communism","the expansion of tertiary production in the economy"],0,"Industrial powers sought raw materials and markets overseas, i.e. imperialism and colonization."],
+["Britain's Corn Law was repealed in 1846: I. to protect the interest of the landlords; II. to reduce the tariff on Britain's import of agricultural products; III. to demonstrate that Britain supported free trade; IV. to support the factory operators.",["I and III","II and III","II and IV","II, III and IV"],3,"Repeal lowered tariffs on imported farm goods, signalled free trade and helped factory owners (cheaper food). It went against the landlords' interest, so I is wrong."],
+["During Britain's early-stage industrial revolution,",["child labour was prohibited.","the working conditions of labour were poor.","capitalists were not inclined to plow back profit to expand output.","the government set up a minimum wage law."],1,"Women and children worked in the new factories, and conditions were poor. Capitalists reinvested profits."],
+["The Industrial Revolution is best defined as",["a change from an agrarian and handicraft economy to one dominated by industry and machine manufacturing","a change from machines back to handicrafts","the spread of communism","the growth of overseas colonies only"],0,"It greatly raised productivity, output and income and transformed the structure of the economy."],
+["Which describes the first stage of the Industrial Revolution?",["1760–1850; coal, steam engine, textile, steel, railway; led by Britain","1870–1914; chemicals, oil, electricity; led by Britain","1969–2010; computers; led by the US","since 2011; AI; led by Germany"],0,"Stage 1: 1760–1850 (Britain). Stage 2: 1870–1914 (Germany, US). Stage 3: 1969–2010 (US). Stage 4: since 2011."],
+["The second stage (1870–1914), with chemicals, oil, electrical products, cars and assembly lines, was led by",["Britain only","Germany and the US","Japan and China","France and Spain"],1,"Britain's leadership was replaced by Germany and the US."],
+["Which technologies are associated with the fourth stage (since 2011)?",["coal and steam engines","cars and assembly lines","computers and mobile phones","AI, internet of things, cloud computing, big data, genetic engineering"],3,"Computers, electronics, internet and mobile phones belong to the third stage."],
+["Why did Britain turn to coal before the Industrial Revolution?",["firewood was used up as the population grew","coal was cheap to import","oil had replaced wood","electricity was not yet invented"],0,"Firewood was a major energy source but was quickly used up, and Britain had plenty of coal underground."],
+["What was the major hurdle to large-scale coal extraction in Britain?",["a shortage of miners","underground water covering many coal seams","a lack of railways","high tariffs on coal"],1,"Drawing out the underground water was the hurdle that the steam engine helped solve."],
+["The steam engine increased coal output mainly by",["transporting coal abroad","pumping underground water out of the mines","replacing miners with robots","lowering coal taxes"],1,"Thomas Newcomen made the first model (1705, the Atmospheric Engine). It was used to extract underground water from mines."],
+["Who turned James Watt's improved steam engine (separate condenser, 1765) into a commercial success?",["Thomas Newcomen","Matthew Boulton","George Stephenson","Adam Smith"],1,"Industrialist Matthew Boulton commercialized Watt's design, which then spread to textiles, locomotives and steamboats."],
+["George Stephenson built the first true steam locomotive running on rails between",["London and Birmingham in 1790","Liverpool and Manchester in 1830","Leeds and Sheffield in 1848","Newcastle and Wales in 1765"],1,"Stephenson's locomotive ran on the Liverpool and Manchester line in 1830."],
+["The Gauge Act of 1848 ensured that",["trains ran on the same sort of rails","tariffs on grain were cut","patents were protected","child labour was banned"],0,"During the 'railway mania' (1835–48) many competing companies built railways. The Gauge Act standardized the rails."],
+["Which was NOT given as a reason why the Industrial Revolution started in Britain?",["the scientific revolution since the 16th century","a patent system protecting intellectual property","low labour costs compared with other countries","higher social standing for scientists and inventors"],2,"Labour costs in Britain were higher than elsewhere, which gave capitalists an incentive to use machines."],
+["Under the enclosure movement,",["landlords took farmland from small farmers to form larger, more efficient farms","the government gave land to small farmers","farmers moved from the cities to the countryside","railways replaced canals"],0,"Displaced small farmers and rural workers moved to cities and provided cheap, abundant labour to the factories."],
+["Higher labour costs in Britain gave capitalists an incentive to",["reduce output","use machines to save production cost","move factories to India","abolish patents"],1,"Expensive labour made machines attractive for saving production cost."],
+["Countries lagging behind in industrialization (e.g. China, India, the Ottoman Empire) found that",["their share of the global economy grew","their share of the global economy diminished","their populations grew faster than Britain's","they quickly expanded their empires"],1,"Industrialization raised Britain's GDP, population and life expectancy, while late industrializers lost relative position."],
+["Adam Smith, the 'father of modern economics', wrote in 1776",["The General Theory of Employment, Interest, and Money","An Inquiry into the Nature and Causes of the Wealth of Nations","The World Is Flat","Das Kapital"],1,"Smith proposed the 'invisible hand': free markets regulate themselves through competition, supply and demand and self-interest."]
+]},
+{id:3,name:"Lecture 3 – The US Economy and the Great Depression",q:[
+["The US stock market crash in October 1929 was due to: I. frantic margin-loan-financed speculation before the crash; II. the collapse of the Bank of the United States; III. the unexpected closure of the New York Stock Exchange on 29 October 1929 (Black Tuesday); IV. the US Congress passing the Smoot-Hawley Tariff Act.",["I only","I and II","I, II and III","I, II, III and IV"],0,"Speculation with margin loans was the cause. The Bank of United States collapsed in Dec 1930 and Smoot-Hawley came later, so both followed the crash. The NYSE did not close."],
+["The Great Depression in the US: I. lasted from 1929 to 1941; II. spread the downturn to many foreign countries; III. caused massive unemployment and bank failures; IV. was caused by the bad economic policy of President Franklin D. Roosevelt.",["I and II","I, II and III","I, III and IV","I, II, III and IV"],1,"It began with the 1929 crash and ended during WWII in 1941. It was not caused by Roosevelt, whose New Deal came after the crash."],
+["Keynesian economics: I. advocated more government spending to get the economy out of recession; II. was supported by monetarists such as Milton Friedman; III. argued that free-market adjustment of wages and prices could by itself restore full employment; IV. held that the volatile psychology of markets could lead to periodic booms and crises.",["I and II","I and IV","I, II and III","I, II and IV"],1,"Keynes (General Theory, 1936) argued markets might not automatically reach full employment, and that 'animal spirits' cause booms and crises. III is the opposite of his view."],
+["During the Roaring 20s: I. the public liked to buy consumer goods on credit; II. the public were very confident the prosperity would continue; III. buying stock with margin loans was quite common; IV. President Hoover urged the Federal Reserve to keep share prices rising.",["I and II","I and III","I, II and III","I, II, III and IV"],2,"Credit buying, optimism and margin loans were all features of the era. There is no evidence that Hoover urged the Fed to push share prices up."],
+["After the Great Depression, governments in western economies: I. took on the role of stabilizing the economy with macroeconomic policy; II. created safety nets such as US Social Security; III. learnt that massive wartime spending can cure unemployment in a recession; IV. used bank deposit insurance to reduce bank runs.",["I and II","I and III","I, II and III","I, II, III and IV"],3,"All four are lessons and reforms that followed the Depression and WWII."],
+["By the 1890s, which country had surpassed Britain for first place in manufacturing output?",["Germany","the United States","Japan","France"],1,"By the early 20th century US per-capita income was double that of Germany and France and 50% higher than Britain's."],
+["Which countries formed the Allied Powers (Triple Entente) in WWI?",["France, Russia and Britain","Germany, Austria-Hungary and the Ottoman Empire","the US, Japan and Italy","Britain, Spain and Portugal"],0,"The Central Powers were Germany, Austria-Hungary and the Ottoman Empire. The US joined the Allies in 1917–18 and became a superpower."],
+["To pay reparations and reconstruction costs, the Weimar government printed massive amounts of paper money, which caused",["deflation","hyperinflation","a gold shortage","a trade surplus"],1,"Hyperinflation destroyed the wealth of the German middle class."],
+["The Dawes Plan (1924) was",["a US loan to Germany that was used to pay reparations","the French occupation of the Ruhr","a US tariff on imports","a New Deal bank law"],0,"The loan let Germany stop printing money, and the global economy recovered. The world relied on the US for stability."],
+["The Ford Model T's price changed from",["$300 in 1908 to $850 in 1924","$850 in 1908 to $1,500 in 1924","$850 in 1908 to $300 in 1924","stayed at $850 throughout"],2,"Assembly-line efficiency cut the price, and by 1929 there were over 23 million cars on American roads."],
+["Why did many Americans borrow to maintain consumption in the 1920s?",["the rich earned less income","most extra income went to corporations and the rich, so ordinary incomes lagged while advertising and credit encouraged spending","banks refused to lend","car prices rose sharply"],1,"Income inequality worsened. Advertising and consumer loans let families afford cars and appliances beyond their means."],
+["The Federal Reserve raised the federal funds rate from 4% (mid-1928) to over 6% (mid-1929) in order to",["encourage more margin lending","prevent further buying of stocks with margin loans","pay for war debts","fund the Hoover Dam"],1,"Share prices were dangerously high, and margin loans of $8.5 billion in Aug 1929 exceeded all currency in circulation."],
+["The Dow Jones, which peaked at 381.17 on 3 September 1929, did not regain that peak until",["1932","1941","1945","1959"],3,"Prices fell more than 90% from the 1929 peak to the 1932 bottom. Black Tuesday was 29 October 1929."],
+["The US unemployment rate rose from about 4% before the crash to what level by 1933?",["10%","25%","15%","40%"],1,"Almost 13 million were out of work in early 1933; those with jobs often took pay cuts of a third or more."],
+["The collapse of the Bank of United States (Dec 1930) sparked a nationwide bank run. Why did bank failures keep spreading?",["there was no government deposit insurance, so depositors lost savings and ran on other banks","banks lent only to farmers","the Fed had raised interest rates to 6%","Smoot-Hawley had cut tariffs"],0,"Bank deposit insurance was later introduced to reduce bank runs."],
+["The Smoot-Hawley Tariff Act",["cut tariffs and boosted exports","raised tariffs, provoked foreign retaliation and US exports fell from $5.2 billion (1929) to $1.7 billion (1933)","created bank deposit insurance","printed more money"],1,"The trade war between the US and Europe made the global downturn worse."],
+["'Hoovervilles' were",["shantytowns of makeshift hovels for those who lost their homes to foreclosure","dams built by President Hoover","factory towns built in the 1920s","public housing built by Roosevelt"],0,"Out-of-work Americans also filled breadlines, begged for food or sold apples on street corners."],
+["Why did deflation hinder recovery even though nominal interest rates were low (1.5% in May 1931)?",["it raised the real interest rate and the real debt burden of borrowers","it reduced real debt","it boosted exports","it raised wages"],0,"Hoover's measures (e.g. the Hoover Dam) were also too small to stimulate aggregate demand."],
+["In 1937 the US government cut federal spending to reduce the budget deficit. The result was that",["the economy boomed","the economy quickly fell back into recession","inflation surged","gold flowed out of the US"],1,"Roosevelt's New Deal stabilized but did not restore full employment. Higher defense spending from 1939 and the WWII mobilization (after Pearl Harbor, 7 Dec 1941) ended unemployment, vindicating Keynes."],
+["How did the economic crisis help the rise of Hitler's Nazi Party?",["it created demand for a strong government to restore national prestige, and the Nazis rose to power in the 1932–33 elections","it ended German reparations","it led to bigger US loans","it elected Hitler in 1924"],0,"Hitler quickly re-armed Germany, intervened in the economy and spread hatred toward Jewish people and fear of communism. Japan's military government invaded China as a response to its own economic problems."]
+]}
+];
+
+var app=document.getElementById('app');
+var S={};
+function esc(s){return s}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+function home(){
+  var h='<h1>The Rise of the Modern Global Economy</h1><p class="sub">Multiple-choice practice &middot; 20 questions per lecture &middot; instant feedback with explanations</p>';
+  L.forEach(function(l){h+='<button class="menu-btn" data-lec="'+l.id+'"><b>'+l.name+'</b><span>20 questions</span></button>'});
+  h+='<button class="menu-btn" data-lec="all"><b>Mixed – all three lectures</b><span>60 questions, random order</span></button>';
+  h+='<p class="sub" style="margin-top:20px;font-size:.85rem">Tip: question order is shuffled each attempt. Good luck!</p>';
+  app.innerHTML=h;
+  app.querySelectorAll('[data-lec]').forEach(function(b){b.onclick=function(){start(b.getAttribute('data-lec'))}});
+}
+function start(id,customList){
+  var list;
+  if(customList){list=customList}
+  else{
+    list=[];
+    L.forEach(function(l){if(id==='all'||String(l.id)===id){l.q.forEach(function(q){list.push({q:q,lec:l.id})})}});
+  }
+  S={id:id,list:shuffle(list),i:0,score:0,wrong:[],answered:false};
+  show();
+}
+function show(){
+  var it=S.list[S.i],q=it.q,n=S.list.length;
+  var h='<div class="top"><span>Question '+(S.i+1)+' of '+n+'</span><button class="link" id="quit">Quit</button></div>';
+  h+='<div class="bar"><i style="width:'+(S.i/n*100)+'%"></i></div><div class="card"><p class="q">'+q[0]+'</p>';
+  q[1].forEach(function(o,k){h+='<button class="opt" data-k="'+k+'"><span class="k">'+'ABCD'[k]+'</span><span>'+o+'</span></button>'});
+  h+='<div id="fb"></div></div>';
+  app.innerHTML=h;
+  S.answered=false;
+  document.getElementById('quit').onclick=function(){if(confirm('Quit this quiz?'))home()};
+  app.querySelectorAll('.opt').forEach(function(b){b.onclick=function(){pick(+b.getAttribute('data-k'))}});
+  window.scrollTo(0,0);
+}
+function pick(k){
+  if(S.answered)return;S.answered=true;
+  var it=S.list[S.i],q=it.q,ok=(k===q[2]);
+  if(ok)S.score++;else S.wrong.push({it:it,k:k});
+  app.querySelectorAll('.opt').forEach(function(b,j){b.disabled=true;if(j===q[2])b.classList.add('ok');else if(j===k)b.classList.add('bad')});
+  var last=S.i===S.list.length-1;
+  document.getElementById('fb').innerHTML='<div class="exp '+(ok?'ok':'bad')+'"><b>'+(ok?'Correct!':'Not quite – answer: '+'ABCD'[q[2]])+'</b><br>'+q[3]+'</div><button class="primary" id="next">'+(last?'See results':'Next')+'</button>';
+  document.getElementById('next').onclick=function(){if(last)results();else{S.i++;show()}};
+}
+function results(){
+  var n=S.list.length,pct=Math.round(S.score/n*100);
+  var h='<h1>Results</h1><div class="card"><div class="score">'+S.score+' / '+n+'</div><div class="sub">'+pct+'% correct</div>';
+  h+='<div class="row">';
+  if(S.wrong.length)h+='<button class="primary" id="retry">Retry the '+S.wrong.length+' I missed</button>';
+  h+='<button class="secondary" id="again">Restart</button><button class="secondary" id="home">Home</button></div></div>';
+  if(S.wrong.length){
+    h+='<div class="card"><b>Review of missed questions</b>';
+    S.wrong.forEach(function(w){var q=w.it.q;h+='<div class="miss"><div>'+q[0]+'</div><div class="y">Your answer: '+'ABCD'[w.k]+'. '+q[1][w.k]+'</div><div class="a">Correct: '+'ABCD'[q[2]]+'. '+q[1][q[2]]+'</div><div class="sub" style="margin:4px 0 0">'+q[3]+'</div></div>'});
+    h+='</div>';
+  }
+  app.innerHTML=h;window.scrollTo(0,0);
+  var r=document.getElementById('retry');
+  if(r)r.onclick=function(){start(S.id,S.wrong.map(function(w){return w.it}))};
+  document.getElementById('again').onclick=function(){start(S.id)};
+  document.getElementById('home').onclick=home;
+}
+home();
+</script>
+</body>
+</html>
